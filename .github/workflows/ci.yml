@@ -14,7 +14,7 @@ jobs:
           distribution: 'temurin'
           java-version: '25'   
       - name: Donner les droits
-        run: chmod +x ./grandlew
+        run: chmod +x ./gradlew
         
       - name: Lancer les tests 
         run: ./gradlew test
