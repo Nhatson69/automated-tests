@@ -12,6 +12,9 @@ jobs:
       - uses: actions/setup-java@v6
         with:
           distribution: 'temurin'
-          java-version: '25'
-      - name: Lancer les tests
+          java-version: '25'   
+      - name: Donner les droits
+        run: chmod +x ./grandlew
+        
+      - name: Lancer les tests 
         run: ./gradlew test
