@@ -20,6 +20,9 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: '25'
+
+      - name: Donner les droits
+        run: chmod +x ./gradlew
       - name: Construire et vérifier
         run: ./gradlew build
       - name: Publier le livrable
